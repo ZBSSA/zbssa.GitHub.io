@@ -13,3 +13,8 @@ DOMAIN-SUFFIX,twimg.com,force-remote-dns
 DOMAIN-KEYWORD,blogspot,force-remote-dns
 DOMAIN-SUFFIX,youtu.be,force-remote-dns
 DOMAIN-KEYWORD,whatsapp,force-remote-dns
+
+
+
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-KEYWORD,google
