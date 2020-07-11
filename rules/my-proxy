@@ -1,2 +1,15 @@
-DOMAIN-SUFFIX,googletraveladservices.com
-DOMAIN,mtalk.google.com
+## 抗 DNS 污染
+DOMAIN-KEYWORD,amazon,force-remote-dns
+DOMAIN-KEYWORD,google,force-remote-dns
+DOMAIN-KEYWORD,gmail,force-remote-dns
+DOMAIN-KEYWORD,youtube,force-remote-dns
+DOMAIN-KEYWORD,facebook,force-remote-dns
+DOMAIN-SUFFIX,fb.me,force-remote-dns
+DOMAIN-SUFFIX,fbcdn.net,force-remote-dns
+DOMAIN-KEYWORD,twitter,force-remote-dns
+DOMAIN-KEYWORD,instagram,force-remote-dns
+DOMAIN-KEYWORD,dropbox,force-remote-dns
+DOMAIN-SUFFIX,twimg.com,force-remote-dns
+DOMAIN-KEYWORD,blogspot,force-remote-dns
+DOMAIN-SUFFIX,youtu.be,force-remote-dns
+DOMAIN-KEYWORD,whatsapp,force-remote-dns
