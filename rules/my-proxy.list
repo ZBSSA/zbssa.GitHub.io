@@ -1,5 +1,6 @@
 DOMAIN-KEYWORD,yoyu
 
+DOMAIN-KEYWORD,google
 DOMAIN,analyticsinsights-pa.googleapis.com
 DOMAIN,analyticsreporting.googleapis.com
 USER-AGENT,com.google.ios.youtubemusic*
@@ -10,7 +11,6 @@ DOMAIN-SUFFIX,gvt0.com
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,blogspot
 DOMAIN-SUFFIX,abc.xyz
 DOMAIN-SUFFIX,android.com
