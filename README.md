@@ -6,4 +6,4 @@ DOMAIN-SUFFIX,webofknowledge.com,DIRECT
 
 阅读2.0书源  
 https://zbssa.github.io/yuedu2  
-<img width="250" height="250" src="https://zbssa.github.io/image/yuedu2.png"/>  
+<img width="200" height="200" src="https://zbssa.github.io/image/yuedu2.png"/>  
