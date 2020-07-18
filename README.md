@@ -12,3 +12,4 @@ DOMAIN-SUFFIX,webofknowledge.com,DIRECT
 https://zbssa.github.io/yuedu2
 
 ![image](https://zbssa.github.io/image/yuedu2.png)
+<img width="150" height="150" src="https://zbssa.github.io/image/yuedu2.png"/>
