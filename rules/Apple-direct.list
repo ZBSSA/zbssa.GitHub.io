@@ -1,6 +1,6 @@
 DOMAIN,safebrowsing.urlsec.qq.com
 DOMAIN,safebrowsing.googleapis.com
-DOMAIN-SUFFIX,music.apple.com,force-remote-dns
+DOMAIN-SUFFIX,music.apple.com
 DOMAIN-SUFFIX,mzstatic.com
 USER-AGENT,com.apple.appstored*
 USER-AGENT,AppStore*
