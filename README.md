@@ -2,6 +2,8 @@
 https://zbssa.github.io/yuedu2  
 <img width="200" height="200" src="https://zbssa.github.io/image/yuedu2.png"/>  
 
+quantumult规则
+https://zbssa.github.io/quantumult
 clash规则  
 https://zbssa.github.io/abc.ini   
 使用模板  
