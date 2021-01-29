@@ -66,7 +66,8 @@ HOST-SUFFIX,mwcname.com,DIRECT,resolve-on-proxy
 HOST-SUFFIX,apple.com,DIRECT,resolve-on-proxy
 HOST-SUFFIX,apple-cloudkit.com,DIRECT,resolve-on-proxy
 HOST-SUFFIX,apple-mapkit.com,DIRECT,resolve-on-proxy
-HOST,e.crashlytics.com,REJECT ##注释此选项有助于大多数App开发者分析崩溃信息；如果您拒绝一切崩溃数据统计、搜集，请取消 # 注释。
+HOST,e.crashlytics.com,REJECT 
+##注释此选项有助于大多数App开发者分析崩溃信息；如果您拒绝一切崩溃数据统计、搜集，请取消 # 注释。
 
 # 国内网站
 HOST-SUFFIX,cn,DIRECT
