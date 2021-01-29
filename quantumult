@@ -6,7 +6,7 @@ Hackl0us Rules, filter, https://raw.githubusercontent.com/Hackl0us/Surge-Rule-Sn
 [BACKUP-SERVER]
 
 [DNS]
-114.114.114.114, 223.5.5.5, 119.29.29.29
+114.114.114.114, 223.5.5.5
 
 [REWRITE]
 ^https?://(www.)?(g|google).cn url 302 https://www.google.com
@@ -16,6 +16,22 @@ Hackl0us Rules, filter, https://raw.githubusercontent.com/Hackl0us/Surge-Rule-Sn
 [TCP]
 # 自定义规则
 ## 您可以在此处插入自定义规则
+
+#我的直连
+DOMAIN-KEYWORD,biquge,DIRECT
+DOMAIN-KEYWORD,webofknowledge,DIRECT
+IP-CIDR,1.1.1.3/24,no-resolve,DIRECT
+
+#我的代理
+DOMAIN-KEYWORD,w8ves,Proxy
+DOMAIN-KEYWORD,gvt1,Proxy
+DOMAIN-KEYWORD,pronhub,Proxy
+DOMAIN-KEYWORD,libgen,Proxy
+DOMAIN-SUFFIX,ni.com,Proxy
+DOMAIN-SUFFIX,download.ni.com,Proxy
+DOMAIN-SUFFIX,emby.yoyu.ltd,Proxy
+
+
 
 # Apple
 HOST,safebrowsing.urlsec.qq.com,DIRECT 
@@ -230,6 +246,102 @@ HOST-SUFFIX,twimg.com,Proxy,resolve-on-proxy
 HOST-KEYWORD,blogspot,Proxy,resolve-on-proxy
 HOST-SUFFIX,youtu.be,Proxy,resolve-on-proxy
 HOST-KEYWORD,whatsapp,Proxy,resolve-on-proxy
+
+#微软
+DOMAIN-KEYWORD,1drv,Proxy
+DOMAIN-KEYWORD,microsoft,Proxy
+DOMAIN-SUFFIX,aadrm.com,Proxy
+DOMAIN-SUFFIX,acompli.com,Proxy
+DOMAIN-SUFFIX,acompli.net,Proxy
+DOMAIN-SUFFIX,aka.ms,Proxy
+DOMAIN-SUFFIX,akadns.net,Proxy
+DOMAIN-SUFFIX,aspnetcdn.com,Proxy
+DOMAIN-SUFFIX,assets-yammer.com,Proxy
+DOMAIN-SUFFIX,azure.com,Proxy
+DOMAIN-SUFFIX,azure.net,Proxy
+DOMAIN-SUFFIX,azureedge.net,Proxy
+DOMAIN-SUFFIX,azurerms.com,Proxy
+DOMAIN-SUFFIX,bing.com,Proxy
+DOMAIN-SUFFIX,cloudapp.net,Proxy
+DOMAIN-SUFFIX,cloudappsecurity.com,Proxy
+DOMAIN-SUFFIX,edgesuite.net,Proxy
+DOMAIN-SUFFIX,gfx.ms,Proxy
+DOMAIN-SUFFIX,hotmail.com,Proxy
+DOMAIN-SUFFIX,live.com,Proxy
+DOMAIN-SUFFIX,live.net,Proxy
+DOMAIN-SUFFIX,lync.com,Proxy
+DOMAIN-SUFFIX,msappproxy.net,Proxy
+DOMAIN-SUFFIX,msauth.net,Proxy
+DOMAIN-SUFFIX,msauthimages.net,Proxy
+DOMAIN-SUFFIX,msecnd.net,Proxy
+DOMAIN-SUFFIX,msedge.net,Proxy
+DOMAIN-SUFFIX,msft.net,Proxy
+DOMAIN-SUFFIX,msftauth.net,Proxy
+DOMAIN-SUFFIX,msftauthimages.net,Proxy
+DOMAIN-SUFFIX,msftidentity.com,Proxy
+DOMAIN-SUFFIX,msidentity.com,Proxy
+DOMAIN-SUFFIX,msn.com,Proxy
+DOMAIN-SUFFIX,msocdn.com,Proxy
+DOMAIN-SUFFIX,msocsp.com,Proxy
+DOMAIN-SUFFIX,mstea.ms,Proxy
+DOMAIN-SUFFIX,o365weve.com,Proxy
+DOMAIN-SUFFIX,oaspapps.com,Proxy
+DOMAIN-SUFFIX,office.com,Proxy
+DOMAIN-SUFFIX,office.net,Proxy
+DOMAIN-SUFFIX,office365.com,Proxy
+DOMAIN-SUFFIX,officeppe.net,Proxy
+DOMAIN-SUFFIX,omniroot.com,Proxy
+DOMAIN-SUFFIX,onedrive.com,Proxy
+DOMAIN-SUFFIX,onenote.com,Proxy
+DOMAIN-SUFFIX,onenote.net,Proxy
+DOMAIN-SUFFIX,onestore.ms,Proxy
+DOMAIN-SUFFIX,outlook.com,Proxy
+DOMAIN-SUFFIX,outlookmobile.com,Proxy
+DOMAIN-SUFFIX,phonefactor.net,Proxy
+DOMAIN-SUFFIX,public-trust.com,Proxy
+DOMAIN-SUFFIX,sfbassets.com,Proxy
+DOMAIN-SUFFIX,sfx.ms,Proxy
+DOMAIN-SUFFIX,sharepoint.com,Proxy
+DOMAIN-SUFFIX,sharepointonline.com,Proxy
+DOMAIN-SUFFIX,skype.com,Proxy
+DOMAIN-SUFFIX,skypeassets.com,Proxy
+DOMAIN-SUFFIX,skypeforbusiness.com,Proxy
+DOMAIN-SUFFIX,staffhub.ms,Proxy
+DOMAIN-SUFFIX,svc.ms,Proxy
+DOMAIN-SUFFIX,sway-cdn.com,Proxy
+DOMAIN-SUFFIX,sway-extensions.com,Proxy
+DOMAIN-SUFFIX,sway.com,Proxy
+DOMAIN-SUFFIX,trafficmanager.net,Proxy
+DOMAIN-SUFFIX,uservoice.com,Proxy
+DOMAIN-SUFFIX,virtualearth.net,Proxy
+DOMAIN-SUFFIX,visualstudio.com,Proxy
+DOMAIN-SUFFIX,windows-ppe.net,Proxy
+DOMAIN-SUFFIX,windows.com,Proxy
+DOMAIN-SUFFIX,windows.net,Proxy
+DOMAIN-SUFFIX,windowsazure.com,Proxy
+DOMAIN-SUFFIX,windowsupdate.com,Proxy
+DOMAIN-SUFFIX,wunderlist.com,Proxy
+DOMAIN-SUFFIX,yammer.com,Proxy
+DOMAIN-SUFFIX,yammerusercontent.com,Proxy
+
+
+#成人
+## General
+DOMAIN-SUFFIX,91porn.com,Proxy
+DOMAIN-SUFFIX,pornhub.com,Proxy
+DOMAIN-SUFFIX,t66y.com,Proxy
+DOMAIN-SUFFIX,xvideos.com,Proxy
+DOMAIN-SUFFIX,kdw019.com,Proxy
+## Japanese
+DOMAIN-SUFFIX,dmm.co.jp,Proxy
+DOMAIN-KEYWORD,dmm,Proxy
+## Gay
+DOMAIN-SUFFIX,me-gay.com,Proxy
+DOMAIN-SUFFIX,sexgayjapan.com,Proxy
+DOMAIN-SUFFIX,gaypornarchive.com,Proxy
+DOMAIN-SUFFIX,www.gayporntube.tv,Proxy
+DOMAIN-SUFFIX,darknight.blog,Proxy
+
 
 # 国外网站
 HOST-SUFFIX,9to5mac.com,Proxy
