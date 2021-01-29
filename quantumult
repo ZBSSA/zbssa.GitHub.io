@@ -20,7 +20,7 @@ Hackl0us Rules, filter, https://raw.githubusercontent.com/Hackl0us/Surge-Rule-Sn
 #我的直连
 DOMAIN-KEYWORD,biquge,DIRECT
 DOMAIN-KEYWORD,webofknowledge,DIRECT
-IP-CIDR,1.1.1.3/24,no-resolve,DIRECT
+IP-CIDR,1.1.1.3/24,DIRECT
 
 #我的代理
 DOMAIN-KEYWORD,w8ves,Proxy
