@@ -37,16 +37,16 @@ DOMAIN-SUFFIX,emby.yoyu.ltd,Proxy
 HOST,safebrowsing.urlsec.qq.com,DIRECT 
 HOST,safebrowsing.googleapis.com,DIRECT
 ## 如果您并不信任以上服务提供商或防止其下载消耗过多带宽资源，可以进入 Safari 设置，关闭 Fraudulent Website Warning 功能，并使用 REJECT 策略。
-HOST,developer.apple.com,Proxy
-HOST-SUFFIX,digicert.com,Proxy
-USER-AGENT,com.apple.trustd*,Proxy
-HOST-SUFFIX,apple-dns.net,Proxy
-HOST,testflight.apple.com,Proxy
+HOST,developer.apple.com,DIRECT
+HOST-SUFFIX,digicert.com,DIRECT
+USER-AGENT,com.apple.trustd*,DIRECT
+HOST-SUFFIX,apple-dns.net,DIRECT
+HOST,testflight.apple.com,DIRECT
 HOST,sandbox.itunes.apple.com,Proxy
-HOST,itunes.apple.com,Proxy
-HOST-SUFFIX,apps.apple.com,Proxy
-HOST-SUFFIX,blobstore.apple.com,Proxy
-HOST,cvws.icloud-content.com,Proxy
+HOST,itunes.apple.com,DIRECT
+HOST-SUFFIX,apps.apple.com,DIRECT
+HOST-SUFFIX,blobstore.apple.com,DIRECT
+HOST,cvws.icloud-content.com,DIRECT
 USER-AGENT,com.apple.appstored*,DIRECT,resolve-on-proxy
 USER-AGENT,AppStore*,DIRECT,resolve-on-proxy
 HOST-SUFFIX,mzstatic.com,DIRECT,resolve-on-proxy
