@@ -1,12 +1,11 @@
-
-DOMAIN-KEYWORD,gvt1
-DOMAIN-KEYWORD,pronhub
-DOMAIN-KEYWORD,libgen
-DOMAIN-SUFFIX,ni.com
-DOMAIN-SUFFIX,download.ni.com
-DOMAIN-SUFFIX,t.me
+DOMAIN-KEYWORD,gvt1,海外服务
+DOMAIN-KEYWORD,pronhub,海外服务
+DOMAIN-KEYWORD,libgen,海外服务
+DOMAIN-SUFFIX,ni.com,海外服务
+DOMAIN-SUFFIX,download.ni.com,海外服务
+DOMAIN-SUFFIX,t.me,海外服务
 
 // 机场网址
-DOMAIN-KEYWORD,duyaoss
-DOMAIN-KEYWORD,miru.cloud
-DOMAIN-KEYWORD,muncloud
+DOMAIN-KEYWORD,duyaoss,海外服务
+DOMAIN-KEYWORD,miru.cloud,海外服务
+DOMAIN-KEYWORD,muncloud,海外服务
