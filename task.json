@@ -2,7 +2,7 @@
     "name":"自用脚本",
     "task":[
         "0 3,13 * * * https://zbssa.github.io/task/jd_quguan.js, tag=京东取关店铺商品, enabled=true",
-        "0 3,13 * * * https://zbssa.github.io/task/login_binn.js, tag=登录校园网, enabled=flase",
-        "15 8,13,18 17-31 5 * https://zbssa.github.io/task/jd_pk.js, tag=京享值pk, enabled=true",
+        "0 3,13 * * * https://zbssa.github.io/task/login_binn.js, tag=登录校园网, enabled=true",
+        "15 8,13,18 17-31 5 * https://zbssa.github.io/task/jd_pk.js, tag=京享值pk, enabled=",
     ]
 }
