@@ -1,5 +1,7 @@
 ## clash模板
 ### 墙内
+https://api.ytoo-163cdn.com/sub?target=clash&url=替换url加密后订阅链接&config=config=https://zbssa.github.io/abc.ini&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=true&sort=false
+ 
 https://subb.zeasay.com/sub?target=clash&url=替换url加密后订阅链接&insert=false&config=https://zbssa.github.io/abc.ini&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true
 ### 墙外（手机能用）
 https://subconverter.herokuapp.com/sub?target=clash&url=替换url加密后订阅链接&insert=false&config=https://zbssa.github.io/abc.ini&list=false&sort=false&udp=false&tfo=false&scv=false&append_type=false&fdn=true&new_name=true
