@@ -1,0 +1,35 @@
+//steam
+HOST-SUFFIX,steamcontent.com,海外服务
+HOST-SUFFIX,steampowered.com,海外服务
+HOST-SUFFIX,steamstatic.com,海外服务
+HOST-SUFFIX,steamcommunity.com,海外服务
+HOST-SUFFIX,akamaihd.net,海外服务
+HOST-SUFFIX,imdodo.com,海外服务
+HOST-SUFFIX,wixsite.com,海外服务
+HOST-SUFFIX,wixsite.com,海外服务
+
+DOMAIN-KEYWORD,gvt1,海外服务
+DOMAIN-KEYWORD,pronhub,海外服务
+DOMAIN-KEYWORD,libgen,海外服务
+DOMAIN-SUFFIX,ni.com,海外服务
+DOMAIN-SUFFIX,download.ni.com,海外服务
+DOMAIN-SUFFIX,t.me,海外服务
+HOST-SUFFIX,pronhub.com,海外服务
+DOMAIN-SUFFIX,w37fhy.com,海外服务
+DOMAIN-KEYWORD,clashdotnet,海外服务
+DOMAIN-SUFFIX,hostloc.com,海外服务
+// 机场网址
+DOMAIN-KEYWORD,duyaoss,海外服务
+DOMAIN-SUFFIX,xlinkworld.dog,海外服务
+// 小说网址
+DOMAIN-KEYWORD,9txs,海外服务
+DOMAIN-KEYWORD,bixiabook,海外服务
+DOMAIN-KEYWORD,81zw,海外服务
+DOMAIN-KEYWORD,eexiaoshuo,海外服务
+DOMAIN-KEYWORD,biquge,海外服务
+DOMAIN-KEYWORD,duyidu,海外服务
+DOMAIN-KEYWORD,aaread,海外服务
+DOMAIN-KEYWORD,biqubao,海外服务
+DOMAIN-KEYWORD,fkzww,海外服务
+DOMAIN-SUFFIX,sto520.com,海外服务
+

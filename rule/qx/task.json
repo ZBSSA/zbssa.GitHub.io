@@ -1,0 +1,6 @@
+{
+    "name":"自用脚本",
+    "task":[
+        "0 0 12 10 * https://zbssa.github.io/task/login_binn.js, tag=登录校园网, enabled=true",
+    ]
+}
