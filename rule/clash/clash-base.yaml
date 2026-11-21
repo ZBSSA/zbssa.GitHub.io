@@ -1,0 +1,113 @@
+# ============================================================
+# clash-base.yaml —— 订阅转换用的基础配置（不含任何节点）
+#
+# 用法：subconverter 的 clash_rule_base 指向本文件的直链
+# 作用：转换时把「防污染 DNS」和「DoH 域名钉 IP」带进成品配置
+#
+# 注意：proxies / proxy-groups / rules 由转换器整段生成并覆盖，
+#       这里不要写节点或规则内容；文末的 MATCH 只是占位，
+#       方便用 mihomo -t 单独校验本文件是否合法。
+# ============================================================
+
+# -------------------- 客户端通用项 --------------------
+mode: rule
+log-level: info
+ipv6: false
+geodata-mode: true           # 用 geoip.dat / geosite.dat（与 Clash Verge 自带资源一致）
+allow-lan: false
+unified-delay: true          # 延迟只测一次握手，数值更稳定
+tcp-concurrent: true         # 同一节点多 IP 时并发握手，减少超时
+find-process-mode: strict
+
+profile:
+  store-selected: true       # 记住手选的节点
+  store-fake-ip: true
+
+# -------------------- DNS（整件事的核心） --------------------
+dns:
+  enable: true
+  ipv6: false
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:             # 这些域名必须真实解析，不能给假 IP
+    - '+.lan'
+    - '+.local'
+    - '+.localdomain'
+    - '+.localhost'
+    - '+.home.arpa'
+    - '+.example'
+    - '+.invalid'
+    - '+.test'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - 'localhost.ptlogin2.qq.com'
+    - 'time.*.com'
+    - 'time1.*.com'
+    - 'time.*.gov'
+    - 'time.*.edu.cn'
+    - 'ntp.*.com'
+    - 'ntp1.*.com'
+    - 'time.*.apple.com'
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - '+.pool.ntp.org'
+    - 'time1.cloud.tencent.com'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*.*.*'
+    - '+.stun.*.*.*.*.*'
+    - '+.n.n.srv.nintendo.net'
+    - '+.s.npln.srv.nintendo.net'
+    - '+.u.npln.srv.nintendo.net'
+    - 'xbox.*.microsoft.com'
+    - 'xbox.*.*.microsoft.com'
+    - '*.xboxlive.com'
+    - '*.*.xboxlive.com'
+    - '*.ipv6.microsoft.com'
+    - 'teredo.*.*'
+    - 'teredo.*.*.*'
+    - 'lens.l.google.com'
+    - '*.mcdn.bilivideo.cn'
+
+  # 只用来解析 DoH 服务器自身的域名，必须是明文 IP
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+  # 普通域名解析（fake-ip 模式下只对上面白名单里的域名生效）
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 'https://doh.pub/dns-query'
+
+  # ★ 关键一行：节点服务器域名用加密 DNS 解析
+  #   明文 DNS 会把 tdx3y.xmrthnode.com 污染到 13.231.182.103（41300/41001 全超时），
+  #   加密 DNS 才返回 222.79.111.226（正常连通）。
+  #   删了这一段，或者把它改成明文 IP，中继节点就会集体超时。
+  proxy-server-nameserver:
+    - 'https://doh.pub/dns-query'
+    - 'https://dns.alidns.com/dns-query'
+
+  # 可选备用：订阅商自带的四个私有 DoH。默认不启用，原因：
+  #   1) cdn1/cdn2.nexolinkapi.com 要先靠明文 DNS 解析出来才能用，cdnhost 那条还得自己在
+  #      hosts 里钉 IP，属于“自己解析自己”，链条长、环节多；
+  #   2) 换订阅商/换域名就整体失效，不能长期依赖；
+  #   3) 实测：只留上面 proxy-server-nameserver 两个公共 DoH，34 个中继同样全通，
+  #      这一段不是必需，删掉不影响结果。
+  # 需要时把下面 6 行的注释符去掉即可（与上面 proxy-server-nameserver 并存也无害）：
+  nameserver-policy:
+     '*.xmrthnode.com':
+       - 'https://cdn1.nexolinkapi.com:25985/0x3f'
+       - 'https://cdn2.nexolinkapi.com/0x3f'
+       - 'https://cdnhost.nexolinkapi.com:25985/0x3f'
+       - 'https://118.128.63.250/0x3f'
+
+# 节点域名的解析不依赖任何固定 IP，所以这里不写 hosts。
+# 订阅商更换节点 IP 时，内核每次启动会自动重新解析，无需改动本文件。
+# （只有启用下面那段备用 nameserver-policy 时，才需要自行补一条
+#   hosts: 'cdnhost.nexolinkapi.com' 钉住可用 IP，否则那条 DoH 连不上。）
+
+# 占位，转换时会被生成的规则整段替换
+rules:
+  - MATCH,DIRECT
