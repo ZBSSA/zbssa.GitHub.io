@@ -23,8 +23,11 @@ profile:
   store-selected: true       # 记住手选的节点
   store-fake-ip: true
 hosts:
-  'tdx3y.xmrthnode.com': 
-    - 222.79.111.226
+  'nexolinkapi.com': 
+    - 36.248.14.174
+    - 112.49.65.191    
+#  'tdx3y.xmrthnode.com': 
+#    - 222.79.111.226
 # -------------------- DNS（整件事的核心） --------------------
 dns:
   enable: true
